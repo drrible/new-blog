@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .create_edit-content{
     input.form-control, select.form-control{
         font-size: 16px;
@@ -33,3 +34,23 @@
 
     }
 }
+=======
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+
+
+
+>>>>>>> efdeca2 (New Commit)
