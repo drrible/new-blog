@@ -1,17 +1,9 @@
-<!DOCTYPE=<html>
-<head><body>
-<meta charset="UTF-8">
+@include ('admin_layout.header')
 
- 
-<title>Content</title>
+yield ('content')
 
 
-
-
-<h ref="{{ route_ ('app\Http\Controllers\ContentController@index') }}">Content</h>
-
-Laravel v {{Illuminate\Foundation\Application:: ID  {{ session()->getId() }}
+@include ('admin._layout.footer')
 
 
 
-</head></body></html>

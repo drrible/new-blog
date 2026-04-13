@@ -15,7 +15,7 @@
 
 
     <link rel="stylesheet" type="text/css" href="{{ mix('admin-assets/css/app.css') }}">
-    <title>Админ панель</title>
+    <title></title>
 
 
 

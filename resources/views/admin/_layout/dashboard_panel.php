@@ -1,0 +1,2 @@
+route Auth\AdminPanel\DashboardController
+route App\Http\Controllers\ContentController
