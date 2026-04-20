@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{ mix('admin-assets/css/app.css') }}">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <title></title>
 
 
@@ -23,6 +24,15 @@
 =======
     <title>Админ панель</title>
 >>>>>>> 05f9b85 (New Commit)
+=======
+    <title>Админ панель</title>
+=======
+    <title></title>
+
+
+
+>>>>>>> a840460bc2996b8a709a467bfb885a0b837f5a9d
+>>>>>>> 2feb950 (new Commit)
 </head>
 <body>
 <header>
