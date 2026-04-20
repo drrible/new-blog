@@ -15,23 +15,18 @@
 
 
     <link rel="stylesheet" type="text/css" href="{{ mix('admin-assets/css/app.css') }}">
+<<<<<<< HEAD
     <title></title>
 
 
 
+=======
+    <title>Админ панель</title>
+>>>>>>> 05f9b85 (New Commit)
 </head>
-
-
-
 <body>
-
-
 <header>
-
-
     <section class="admin-navbar mb-2">
-
-
         <div class="container">
             <nav class="navbar navbar-expand-lg    p-1">
                 <div class="container-fluid">
@@ -43,24 +38,21 @@
 
                     <div class=" collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ms-auto ">
-{{--                            <li class="nav-item">--}}
-{{--                                <a class="nav-link mx-2 {{ Route::is('admin.dashboard') ? 'active' : '' }}"--}}
-{{--                                   href="{{route('admin.dashboard')}}">Панель</a>--}}
-{{--                            </li>--}}
+                            <li class="nav-item">
+                              <a class="nav-link mx-2 {{ Route::is('admin.dashboard') ? 'active' : '' }}"
+                                  href="{{route('admin.dashboard')}}">Панель</a>
+                           </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle  {{ Route::is('news.*') || Route::is('news.*') ? 'active' : '' }}"
-
                                    href="#" id="tasksDropdown" role="button"
                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Новости
                                 </a>
-
                                 <ul class="dropdown-menu" aria-labelledby="tasksDropdown">
                                     <li><a class="dropdown-item" href="{{route('news.index')}}">Все</a></li>
                                     <li><a class="dropdown-item" href="{{route('news.create')}}">Добавить новость</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="{{route('news-categories.index')}}">Категории</a></li>
-
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -76,27 +68,11 @@
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle {{ Route::is('test.*')  ? 'active' : '' }}"
-                                   href="#" id="navbarDropdown" role="button"
-                                   data-bs-toggle="dropdown" aria-expanded="false">
-                                    Тесты
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="{{route('tests.index')}}">Все</a></li>
-                                    <li><a class="dropdown-item" href="{{route('tests.create')}}">Добавить тест</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="{{route('tests-categories.index')}}">Категории</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
                                 <a class="nav-link  {{ Route::is('passed.testings.*') ? 'active' : '' }}"
                                    href="{{route('passed.testings')}}"
                                   >
-                                    Пройденные тесты
                                 </a>
-
                             </li>
-
                         </ul>
                         <ul class="navbar-nav ms-auto cabinet">
 
@@ -111,8 +87,6 @@
                                     <a class="dropdown-item" href="/logout">Выйти</a>
                                 </div>
                             </li>
-
-
                         </ul>
                     </div>
                 </div>
@@ -122,6 +96,11 @@
 
 
 {{--        ///old--}}
+<!-- 
+SESSION_STORAGE
+php_inf__env ('PHP_CFG');
+
+-->
 
 
         <nav class="navbar  navbar-expand-lg p-0">
@@ -131,85 +110,81 @@
                 <i class="fas fa-bars"></i>
             </button>
 
-{{--            <div class="collapse navbar-collapse" id="navbarSupportedContent">--}}
+    {          
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-{{--                <ul class=" navbar-nav mr-auto ml-auto">--}}
-
-
-{{--                    <li class="nav-item {{ Request::is('admin.dashboard') ? 'active' : '' }}">--}}
-{{--                        <a class="nav-link " href="{{route('admin.dashboard')}}">--}}
-{{--                            <i class="fas fa-university"></i>--}}
-{{--                            Панель--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
+               <ul class=" navbar-nav mr-auto ml-auto">
 
 
-{{--                    <li class="nav-item {{ Request::is('pages') ? 'active' : '' }}">--}}
-{{--                        <a class="nav-link " href="{{route('users.index')}}">--}}
-{{--                            <i class="fas fa-scroll"></i>--}}
-{{--                            Сотрудники--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
+                    <li class="nav-item {{ Request::is('admin.dashboard') ? 'active' : '' }}"
+                     <a class="nav-link " href="{{route('admin.dashboard')}}"
+                           <i class="fas fa-university"></i>Панель</a>
+                    </li>
 
 
-{{--                    <li class="nav-item dropdown {{ Request::is('*licentiates*') ? 'active' : '' }}">--}}
-
-{{--                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-list-ul mr-1"></i>Лиценциат</a>--}}
-{{--                        <ul class="dropdown-menu ">--}}
-
-
-{{--                            <li class="drop-hover"> <a class="dropdown-item " href="{{route('licentiates.index')}}">Все заявления</a>--}}
-{{--                                <a class="submenu" href="{{route('licentiates.create')}}"><i class="fas fa-plus mr-2"></i>Новое Заявление</a>--}}
-
-{{--                            </li>--}}
-{{--                            <li>  <a class="dropdown-item" href="{{route('lspecs.index')}}">Специальности</a></li>--}}
-
-{{--                            <li>--}}
-{{--                                <a class="dropdown-item bg-success text-white" href="{{route('createLBase')}}"><i class="fas fa-file-excel"></i> Экспортировать Базу</a>--}}
-{{--                            </li>--}}
-
-{{--                        </ul>--}}
-
-{{--                    </li>--}}
-
-{{--                    <li class="nav-item dropdown  {{ Request::is('*masterat*') ? 'active' : '' }}">--}}
-{{--                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-list mr-1"></i>Мастерат</a>--}}
-{{--                        <ul class="dropdown-menu">--}}
-{{--                                    <li class="drop-hover">--}}
-{{--                                        <a class="dropdown-item" href="{{route('masterat.index')}}">Все заявления</a>--}}
-{{--                                        <a class="submenu" href="{{route('masterat.create')}}"><i class="fas fa-plus mr-2"></i>Новое Заявление</a>--}}
-
-{{--                                    </li>--}}
-
-{{--                            <li>--}}
-{{--                                <a class="dropdown-item" href="{{route('mspecs.index')}}">Специализации</a>--}}
-{{--                            </li>--}}
-
-{{--                            <li>--}}
-{{--                                <a class="dropdown-item bg-success text-white" href="{{route('createMBase')}}"><i class="fas fa-file-excel"></i> Экспортировать Базу</a>--}}
-{{--                            </li>--}}
-
-{{--                        </ul>--}}
-{{--                    </li>--}}
-
-{{--                    <li class="nav-item  {{ Request::is('*questions*') ? 'active' : '' }}">--}}
-{{--                        <a class="nav-link" href="{{route('questions.index')}}">--}}
-{{--                            <i class="fas  fa-question-circle mr-1"></i>--}}
-{{--                            Вопросы--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-
-{{--                    <li class="nav-item  {{ Request::is('*users*') ? 'active' : '' }}">--}}
-{{--                        <a class="nav-link" href="{{route('users.index')}}">--}}
-{{--                            <i class="fas fa-users mr-1"></i>--}}
-{{--                            Студенты--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-
-{{--                </ul>--}}
+                   <li class="nav-item {{ Request::is('pages') ? 'active' : '' }}"
+                        <a class="nav-link " href="{{route('users.index')}}"
+                            <i class="fas fa-scroll"></i>
+                            Сотрудники
+                       </a>
+                    </li>
 
 
-{{--            </div>--}}
+                   <li class="nav-item dropdown {{ Request::is('*licentiates*') ? 'active' : '' }}"
+
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-list-ul mr-1"></i>Лиценциат</a>--}}
+                       <ul class="dropdown-menu ">
+
+                              <a class="submenu" href="{{route('licentiates.create')}}"><i class="fas fa-plus mr-2"></i>Новое Заявление</a>
+
+                          </li>
+                            <li>  <a class="dropdown-item" href="{{route('lspecs.index')}}">Специальности</a></li>--}}
+
+                            <li>
+                                <a class="dropdown-item bg-success text-white" href="{{route('createLBase')}}"><i class="fas fa-file-excel"></i> Экспортировать Базу</a>
+                            </li>
+
+                        </ul>
+
+                   </li>
+
+                   <li class="nav-item dropdown  {{ Request::is('*masterat*') ? 'active' : '' }}">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-list mr-1"></i>Мастерат</a>--}}
+                        <ul class="dropdown-menu">
+                                    <li class="drop-hover">
+                                        <a class="dropdown-item" href="{{route('masterat.index')}}">Все заявления</a>
+                                      <a class="submenu" href="{{route('masterat.create')}}"><i class="fas fa-plus mr-2"></i>Новое Заявление</a>
+
+                                    </li>
+                            <li>
+                               <a class="dropdown-item" href="{{route('mspecs.index')}}">Специализации</a>
+                            </li>
+
+                           <li>
+                                <a class="dropdown-item bg-success text-white" href="{{route('createMBase')}}"><i class="fas fa-file-excel"></i> Экспортировать Базу</a>
+                       </li>
+
+                      </ul>
+                    </li>
+
+                    <li class="nav-item  {{ Request::is('*questions*') ? 'active' : '' }}">
+                      <a class="nav-link" href="{{route('questions.index')}}">
+                            <i class="fas  fa-question-circle mr-1"></i>
+                            Вопросы
+                       </a>
+                    </li>
+
+                   <li class="nav-item  {{ Request::is('*users*') ? 'active' : '' }}">--}}
+                      <a class="nav-link" href="{{route('users.index')}}">--}}
+                           <i class="fas fa-users mr-1"></i>--}}
+                           Студенты
+                       </a>
+                    </li>
+
+                </ul>
+
+
+            </div>
         </nav>
 
     </section>
@@ -328,6 +303,10 @@
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                                     Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
 >>>>>>> efdeca2 (New Commit)
+
+
+<!-- session stored on GitHub -->
+
                                 </div>
                             </div>
                         </div>
@@ -345,7 +324,6 @@
 </header>
 =======
                 </div>
-
                 <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
                     <div class="text-center text-sm text-gray-500 sm:text-left">
                         <div class="flex items-center">
@@ -368,7 +346,10 @@
                     </div>
 
                     <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
+
+                    <!-- ?
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                                    -->
                     </div>
                 </div>
             </div>

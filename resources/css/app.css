@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -15,3 +16,33 @@
     display: block;
     font-display: auto; 
 }
+=======
+html.dark h1 {
+    color: color(var(--foreground) l(+ 10%));
+}
+
+.sbt_btn {
+display: inline-block;
+padding: 0%;
+}
+
+.nav-button {
+margin: auto;
+
+}
+ 
+.nav-item {
+  &:hover{
+      background-color: #4401;
+  }
+}
+
+
+
+
+
+
+
+
+
+>>>>>>> 05f9b85 (New Commit)
