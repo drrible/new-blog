@@ -1,4 +1,4 @@
-html.dark h1 {
+.html.dark h1 {
     color: color(var(--foreground) l(+ 10%));
 }
 
