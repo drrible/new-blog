@@ -2,21 +2,15 @@
     color: color(var(--foreground) l(+ 10%));
 }
 
-.sbt_btn {
-display: inline-block;
-padding: 0%;
+.body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-.nav-button {
-margin: auto;
+.a {
+  color: #00B7FF;
+}
 
-}
- 
-.nav-item {
-  &:hover{
-      background-color: #4401;
-  }
-}
 
 
 
