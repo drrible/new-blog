@@ -1,4 +1,4 @@
-@include ('admin.layout.header')
+@include ('admin_layout.header')
 
 @yield ('content')
 
