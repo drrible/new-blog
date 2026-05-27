@@ -1,38 +1,25 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-{{--    заменить на npm-modules--}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/
+    
+    
+    releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 
     <link rel="stylesheet" type="text/css" href="{{ mix('admin-assets/css/app.css') }}">
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <title></title
+
+    <title>Admin Panel</title>
 
 
-
-=======
-    <title>Админ панель</title>
->>>>>>> 05f9b85 (New Commit)
-=======
-    <title>Админ панель</title>
-=======
-    <title></title>
-
-
-
->>>>>>> a840460bc2996b8a709a467bfb885a0b837f5a9d
->>>>>>> 2feb950 (new Commit)
 </head>
 <body>
 <header>
@@ -40,7 +27,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg    p-1">
                 <div class="container-fluid">
-                    <a class="logo navbar-brand text-white" href="{{route('admin.dashboard')}}" >Админ панель</a>
+                    <a class="logo navbar-brand text-white" href="{{route('admin.dashboard')}}" >Admin Panel</a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -50,30 +37,30 @@
                         <ul class="navbar-nav ms-auto ">
                             <li class="nav-item">
                               <a class="nav-link mx-2 {{ Route::is('admin.dashboard') ? 'active' : '' }}"
-                                  href="{{route('admin.dashboard')}}">Панель</a>
+                                  href="{{route('admin.dashboard')}}">Panel</a>
                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle  {{ Route::is('news.*') || Route::is('news.*') ? 'active' : '' }}"
                                    href="#" id="tasksDropdown" role="button"
                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Новости
+                                    Js
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="tasksDropdown">
                                     <li><a class="dropdown-item" href="{{route('news.index')}}">Все</a></li>
-                                    <li><a class="dropdown-item" href="{{route('news.create')}}">Добавить новость</a></li>
+                                    <li><a class="dropdown-item" href="{{route('news.create')}}">Add json categorie</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="{{route('news-categories.index')}}">Категории</a></li>
+                                    <li><a class="dropdown-item" href="{{route('news-categories.index')}}">Categories</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle {{ Route::is('users.*') ? 'active' : '' }}"
                                    href="#" id="navbarDropdown" role="button"
                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Пользователи
+                                    Users
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="{{route('users.index')}}">Все</a></li>
-                                    <li><a class="dropdown-item" href="{{route('users.create')}}">Добавить Пользователя</a></li>
+                                    <li><a class="dropdown-item" href="{{route('users.index')}}">All</a></li>
+                                    <li><a class="dropdown-item" href="{{route('users.create')}}">Create user</a></li>
                                 </ul>
                             </li>
 
@@ -93,8 +80,8 @@
                                     </i> </a>
                                 <div class="dropdown-menu">
 
-                                    <a class="dropdown-item" href="/"> На главную страницу</a>
-                                    <a class="dropdown-item" href="/logout">Выйти</a>
+                                    <a class="dropdown-item" href="/"> On main page</a>
+                                    <a class="dropdown-item" href="/logout">Exit</a>
                                 </div>
                             </li>
                         </ul>
@@ -102,13 +89,6 @@
                 </div>
             </nav>
         </div>
-
-
-
-{{--        ///old--}}
-
-
-
         <nav class="navbar  navbar-expand-lg p-0">
 
 
@@ -124,30 +104,41 @@
 
                     <li class="nav-item {{ Request::is('admin.dashboard') ? 'active' : '' }}"
                      <a class="nav-link " href="{{route('admin.dashboard')}}"
-                           <i class="fas fa-university"></i>Панель</a>
+                          
                     </li>
 
 
+
+<ul> </ul>
+
+<div class = "navbar-toogler">
+</div>
+<!-- stored errors in cache --> 
+
+// \\ // _ ^-_-"{}" 
+<li> </li>
                    <li class="nav-item {{ Request::is('pages') ? 'active' : '' }}"
                         <a class="nav-link " href="{{route('users.index')}}"
                             <i class="fas fa-scroll"></i>
-                            Сотрудники
+                            <!-- 
+                            Users can added by your choice
+-->
                        </a>
                     </li>
 
 
                    <li class="nav-item dropdown {{ Request::is('*licentiates*') ? 'active' : '' }}"
 
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-list-ul mr-1"></i>Лиценциат</a>--}}
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-list-ul mr-1"></i><!-- --></a>
                        <ul class="dropdown-menu ">
 
-                              <a class="submenu" href="{{route('licentiates.create')}}"><i class="fas fa-plus mr-2"></i>Новое Заявление</a>
+                              <a class="submenu" href="{{route('licentiates.create')}}"><i class="fas fa-plus mr-2"></i>New Report</a>
 
                           </li>
-                            <li>  <a class="dropdown-item" href="{{route('lspecs.index')}}">Специальности</a></li>--}}
+                            <li>  <a class="dropdown-item" href="{{route('lspecs.index')}}"><!-- --></a></li>
 
                             <li>
-                                <a class="dropdown-item bg-success text-white" href="{{route('createLBase')}}"><i class="fas fa-file-excel"></i> Экспортировать Базу</a>
+                                <a class="dropdown-item bg-success text-white" href="{{route('createLBase')}}"><i class="fas fa-file-excel"></i>Export Base</a>
                             </li>
 
                         </ul>
@@ -155,41 +146,38 @@
                    </li>
 
                    <li class="nav-item dropdown  {{ Request::is('*masterat*') ? 'active' : '' }}">
-                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-list mr-1"></i>Мастерат</a>--}}
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-list mr-1"></i><!-- --></a>
                         <ul class="dropdown-menu">
-                                    <li class="drop-hover">
-                                        <a class="dropdown-item" href="{{route('masterat.index')}}">Все заявления</a>
-                                      <a class="submenu" href="{{route('masterat.create')}}"><i class="fas fa-plus mr-2"></i>Новое Заявление</a>
-
-                                    </li>
+                                    
                             <li>
-                               <a class="dropdown-item" href="{{route('mspecs.index')}}">Специализации</a>
+                               <a class="dropdown-item" href="{{route('mspecs.index')}}">Specializations</a>
                             </li>
 
                            <li>
-                                <a class="dropdown-item bg-success text-white" href="{{route('createMBase')}}"><i class="fas fa-file-excel"></i> Экспортировать Базу</a>
+                                <a class="dropdown-item bg-success text-white" href="{{route('createMBase')}}"><i class="fas fa-file-excel"></i> Export Report</a>
                        </li>
 
                       </ul>
                     </li>
 
                     <li class="nav-item  {{ Request::is('*questions*') ? 'active' : '' }}">
-                      <a class="nav-link" href="{{route('questions.index')}}">
+                    <a class="nav-link" href="{{route('questions.index')}}">
                             <i class="fas  fa-question-circle mr-1"></i>
-                            Вопросы
+                            Questions
                        </a>
                     </li>
 
-                   <li class="nav-item  {{ Request::is('*users*') ? 'active' : '' }}">--}}
-                      <a class="nav-link" href="{{route('users.index')}}">--}}
-                           <i class="fas fa-users mr-1"></i>--}}
-                           Студенты
-                       </a>
-                    </li>
 
+                <ul class="sbt-button">
+                    <li class="nav-item  {{ Request::is('*users*') ? 'active' : '' }}">
+                      <a class="nav-link" href="{{route('users.index')}}">
+                           <i class="fas fa-users mr-1"></i>
+                           <ul>
+                           <p> some text </p>
+                            </ul>
+                </a>
+                <ul>    
                 </ul>
-
-
             </div>
         </nav>
 
@@ -199,7 +187,6 @@
     <section class="error ">
 
             <div class="text-center">
-                @if ($errors->any())
                     <div class=" mt-2">
                         <div class="row justify-content-center">
                             <div class="col-md-4">
@@ -207,9 +194,6 @@
                                 <div class="alert alert-danger flash-message">
                                     <a class="close" data-dismiss="alert" href="#">×</a>
                                     <ul>
-                                        @foreach ($errors->all() as $error)
-                                            <li>{{ $error }}</li>
-                                        @endforeach
                                     </ul>
 =======
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -217,7 +201,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Laravel New Blog</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -236,19 +220,17 @@
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
+                    
+                        <a href="{{ url('/frontend/pages/some_file') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
+                    
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 
-                        @if (Route::has('register'))
+                      
                             <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
+                        
                 </div>
-            @endif
+
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
@@ -308,28 +290,28 @@
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
->>>>>>> efdeca2 (New Commit)
+                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>
+                                        ,and more.
 
 
-<!-- session stored on GitHub -->
+<!-- session stored on GitHub  
 
+
+
+https://drrible/new-blog/.git ????
+                                    -->
+                    
+                                
                                 </div>
                             </div>
                         </div>
                     </div>
-<<<<<<< HEAD
-                @endif
             </div>
-
-
 
     </section>
 
-
-
 </header>
-=======
+
                 </div>
                 <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
                     <div class="text-center text-sm text-gray-500 sm:text-left">
@@ -354,13 +336,14 @@
 
                     <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
 
-                    <!-- ?
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                                    -->
+                    
+                    <!-- ???? Str::Slug ('__env ('APP_NAME', 'laravel')'_' .session');
+                    Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})       
+                        ????
+                        -->
                     </div>
                 </div>
             </div>
         </div>
     </body>
 </html>
->>>>>>> efdeca2 (New Commit)
