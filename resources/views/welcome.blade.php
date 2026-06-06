@@ -9,10 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/ -->
     
     
-    releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 
     <link rel="stylesheet" type="text/css" href="{{ mix('admin-assets/css/app.css') }}">
@@ -96,25 +95,16 @@
                 <i class="fas fa-bars"></i>
             </button>
 
-    {          
+            
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                <ul class=" navbar-nav mr-auto ml-auto">
 
-
-                    <li class="nav-item {{ Request::is('admin.dashboard') ? 'active' : '' }}"
-                     <a class="nav-link " href="{{route('admin.dashboard')}}"
-                          
+                     <a class="nav-link " href="{{route('admin.dashboard')}}"           
                     </li>
-
-
-
 <ul> </ul>
 
-<div class = "navbar-toogler">
-<!-- stored errors in cache --> 
 
-// \\ // _ ^-_-"{}" 
 <li> </li>
                    <li class="nav-item {{ Request::is('pages') ? 'active' : '' }}"
                         <a class="nav-link " href="{{route('users.index')}}"
@@ -191,10 +181,8 @@
                             <div class="col-md-4">
 
                                 <div class="alert alert-danger flash-message">
-                                    <a class="close" data-dismiss="alert" href="#">×</a>
                                     <ul>
                                     </ul>
-=======
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
