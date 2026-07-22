@@ -12,7 +12,7 @@
        More info: h5bp.com/i/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Tiket.com &#9733; File not Found</title>
+  <title>404 %7b %2bFile not Found</title>
   <meta name="description" content="">
   
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
@@ -49,7 +49,7 @@
           <p>
             <strong class="sincerely">Sincerely.</strong>
           </p>
-          <h2 class="ir">Tiket.com</h2>
+          <h2 class="ir">404</h2>
         </div>
       </div>
     </section>

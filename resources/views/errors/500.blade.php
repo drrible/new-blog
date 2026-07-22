@@ -34,12 +34,9 @@
                 </p>
 
                 <div class="text-left">
-                    <a href="/" class="btn btn-big btn-reg">Главная страница</a>
-                    <li class="inline-block mr-2">
-
-                    <p class="mb-2 p-0">This page cannot be found.</p>
-
-                
+                    <a href="/resources/views/welcome.blade.php" class="btn btn-big btn-reg">Главная страница</a>
+                  <li class="inline-block mr-2">
+                    <p class="mb-2 p-0">This page cannot be found.</p> 
                 </div>
             </div>
         </div>

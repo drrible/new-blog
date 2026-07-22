@@ -1,0 +1,34 @@
+body {
+  text-align: center;
+  background-image :url ('c:/Users/user/OpenServer/domains/new-blog/img/IMG_0127.jpg');
+}
+
+.hover-1 {
+background-image: linear-gradient(#fc0543, #c95011);
+transition: 5s; 
+}
+
+html {
+  display:inline-block;
+  position: absolute
+}
+
+div {
+  align-self: start;
+}
+
+login{
+border-bottom: 0cm;
+padding: 7em;
+}
+
+signup { 
+nav-index: auto;
+position: relative;
+}
+
+css {
+
+font-family: 'Trebuchet MS', 'Trebuchet MS Android', system-ui;
+}
+
